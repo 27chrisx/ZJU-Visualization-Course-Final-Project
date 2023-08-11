@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(255, 233, 200);
+}
+
+.root{
+    height:100vh;
+    overflow-y: scroll;
+    scroll-snap-type:y mandatory;
+}
+
+.page{
+    height: 100vh;
+    display:flex;
+    scroll-snap-align: start;
+}
+
+.firstPage{
+    background-image: url("../img/giphy.gif");
+    background-repeat: no-repeat;
+    margin:0px;
+    background-size: 100%;
+    display: inline-block;
+}
+
+.title{
+    margin-top: 12%;
+    margin-left: 5%;
+    width: 50%;
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titleFirst{
+    color: rgb(172, 103, 46);
+    font-size: 100px;
+}
+
+.titleSecond{
+    color: rgb(207, 160, 78);
+    font-size: 25px;
+}
+
+.root::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+.controls{
+    position: absolute;
+    top: 0%;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(83, 50, 0);
+}
+
+.controls li{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 10%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(226, 208, 192);
+    list-style: none;
+    font-size: 25px;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+
+.control2{
+    margin-left: 50%;
+}
+
+.secondPage{
+    color:#893448
+}
+
+.secondPage h1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.secondPage h2{
+    font-style: italic;
+}
+
+.secondPage h3{
+    font-style: italic;
+}
+
+.preparationTitle{
+    width: 600px;
+    margin-top: 6%;
+    margin-left: 12%;
+    flex-shrink: 0;
+}
+
+.dataSources{
+    width: 650px;
+    margin-top: 11%;
+    margin-left: -41%;
+    flex-shrink: 0;
+    transform: translate(0,0);
+}
+
+.dataSourceTitle{
+    margin-left: -10%;
+}
+
+.sources{
+    margin-left: -5%;
+}
+
+.IMDB{
+    position: absolute;
+    width: 360px;
+    top:115px;
+    left:100px
+}
+
+.TMDB{
+    position: absolute;
+    width: 360px;
+    top:335px;
+    left:100px
+}
+
+.preparationSteps{
+    width: 550px;
+    margin-top: 8%;
+    margin-left: 7%;
+    flex-shrink: 0;
+    transform: translate(0,0);  
+}
+
+.SheetJS{
+    position: absolute;
+    width: 500px;
+    top: 260px;
+}
+
+.steps{
+    margin-left: 5%;
+}
+
+.firstBorder{
+    margin-top: 7vh;
+    margin-left: 1px;
+    width: 930px;
+    height: 47.5%;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(75, 43, 0);
+    flex-shrink: 0;
+}
+
+.firstTable{
+    width: 100%;
+    height: 100%;
+}
+
+.secondBorder{
+    width: 599px;
+    height: 47.5%;
+    margin-top: 7vh;
+    margin-left: 2px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(75, 43, 0);
+    flex-shrink: 0;
+}
+
+.secondTable{
+    width: 100%;
+    height: 100%;
+}
+
+.thirdBorder{
+    margin-top: 55vh;
+    margin-left: -1533.5px;
+    height: 44.5%;
+    width: 430px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(75, 43, 0);
+    background-color: rgb(255,216,39,0.15)
+}
+
+.thirdTable{
+    width: 100%;
+    height: 100%;
+    transform: translate(0,0);
+}
+
+.filmTitle{
+    margin-top: 2%;
+    margin-left: 4%;
+    font-size: 13px;
+    color: #893448;
+}
+
+.introduction{
+    width: 95%;
+    margin-left: 4%;
+    margin-top: 2.8%;
+    word-wrap:break-word;
+    font-size: 19px;
+    font-style:italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.poster{
+    position: absolute;
+    top: 60px;
+    left: 326px;
+    width: 20%
+}
+
+.forthBorder{
+    width: 715px;
+    height: 44.5%;
+    margin-top: 55vh;
+    margin-left: 2px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(75, 43, 0);
+}
+
+.forthTable{
+    width: 100%;
+    height: 100%;
+}
+
+.fifthBorder{
+    width: 380px;
+    height: 44.5%;
+    margin-top: 55vh;
+    margin-left: 2px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(75, 43, 0);
+}
+
+.fifthTable{
+    width: 100%;
+    height: 100%;
+}
+
+.forthPage{
+    color: #893448;
+}
+
+.forthPage h1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.forthPage h2{
+    font-style: italic;
+}
+
+.forthPage h3{
+    font-style: italic;
+}
+
+.aboutTitle{
+    width: 600px;
+    margin-top: 6%;
+    margin-left: 12%;
+    flex-shrink: 0;
+}
+
+.ourTeam{
+    width: 650px;
+    margin-top: 11%;
+    margin-left: -46%;
+    flex-shrink: 0;
+    transform: translate(0,0);
+}
+
+.zjj{
+    position:absolute;
+    width:65px;
+    top:50px;
+    left:450px
+}
+
+.xyd{
+    position: absolute;
+    width:65px;
+    top:150px;
+    left:450px
+} 
+
+.yyl{
+    position: absolute;
+    width:65px;
+    top:260px;
+    left:450px
+}
+
+.inspiration{
+    width: 700px;
+    margin-top: 36%;
+    margin-left: -43%;
+    flex-shrink: 0;
+    transform: translate(0,0);
+}
+
+.inspirationText{
+    width: 520px
+}
+
+.inspirationPoster{
+    position: absolute;
+    width: 70px;
+    left: 535px;
+    top: 15px;
+}
+
+.briefIntroduction{
+    width: 500px;
+    margin-top: 8%;
+    margin-left: 10%;
+    flex-shrink: 0;
+}
+
+.references{
+    width: 500px;
+    margin-top: 38%;
+    margin-left: -33%;
+    flex-shrink: 0;
+}
+
+.list1{
+    margin-left: 8%;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.list2{
+    margin-left: 5%;
+}
+
+.list3{
+    margin-left: 5%;
+}

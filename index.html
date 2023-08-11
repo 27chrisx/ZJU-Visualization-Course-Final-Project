@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Film</title>
+    <!-- 引入 ECharts 文件 -->
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/essos.js"></script>
+    <script src="./js/xlsx.full.min.js"></script>
+    <script src="./js/IMDBDataSet.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <div class="root">
+      <div id="1" class="page firstPage">
+        <div id="title" class="title">
+          <h1 class="titleFirst">Films:<br>The poems of life</h1>
+          <p class="titleSecond">
+            <br>
+            Films, a kind of moving image, have gradually developed from the public's novelty hunting to one of the important tools of mass media, communication and entertainment in the 21st century. Film is also a huge influence in the fields of art, technology and politics.</p>
+        </div>
+      </div>
+      <div id="2" class="page secondPage">
+        <h1 class="preparationTitle">Preparation</h1>
+        <div class="dataSources">
+          <h2 class="dataSourceTitle">Data Sources</h2><br>
+          <ul class="sources">
+            <li>IMDB: IMDB is an online database of movie actors, movies, TV shows, TV entertainers, video games, and movie production teams.</li><br><br><br><br><br><br><br><br><br><br>
+            <li>TMDB: TMDB is a community-built online database of movies, TV shows, cast and crew.</li>
+          </ul>
+          <img class="IMDB" src="./img/IMDB.png" alt="IMDB">
+          <img class="TMDB" src="./img/TMDB.png" alt="TMDB">
+        </div>
+        <div class="preparationSteps">
+          <h2>Preparation Steps</h2><br>
+          <p>
+            Before formally producing the system, we have carried out the following preparatory work:
+          </p><br>
+          <ol class="steps">
+            <li>
+              Download and Organize Data: We downloaded the data in xlsx format from IMDB and consulted TMDB to supplement the incomplete data. 
+            </li><br>
+            <li>
+              Format Conversion: We used xlsx.full.min.js to convert the data format from xlsx to js.
+            </li><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <li>
+              Start: We started to design the system with the processed data.
+            </li>
+            <img class="SheetJS" src="./img/SheetJS.png" alt="SheetJS">
+          </ol>
+        </div>
+      </div>
+      <div id="3" class="page thirdPage">
+        <div class="firstBorder">
+          <div id="main" class="firstTable"></div>
+        </div>
+        <div class="secondBorder">
+          <div id="typeList" class="secondTable"></div>
+        </div>
+        <div class="thirdBorder">
+          <div id="filmIntroduction" class="thirdTable">
+            <div class="filmTitle">
+              <h2>Introduction</h2>
+            </div>
+            <div id="introduction" class="introduction">
+              <p id="littleTitle">
+                Film Title: The Godfather
+              </p>
+              <p id="releasedYear">
+                Year: 1972
+              </p>
+              <p id="runTime">
+                Runtime: 175 min
+              </p>
+              <p id="genre">
+                Genre: Crime,Drama
+              </p>
+              <p id="rating">
+                IMDB Rating: 9.2
+              </p>
+              <p id="gross">
+                Gross: $134966411
+              </p>
+              <p id="certificate">
+                Certificate: A
+              </p>
+              <p id="overview">
+                Overview: An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.
+              </p>
+            </div>
+            <img id="poster" class="poster" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY98_CR1,0,67,98_AL_.jpg" alt="The Godfather">
+          </div>
+        </div>
+        <div class="forthBorder">
+          <div id="personConnection" class="forthTable"></div>
+        </div>
+        <div class="fifthBorder">
+          <div id="personList" class="fifthTable"></div>
+        </div>
+        <script type="text/javascript" src="./js/painting.js"></script>
+      </div>
+      <div id="4" class="page forthPage">
+        <h1 class="aboutTitle">About this Project</h1>
+        <div class="ourTeam">
+          <h2>Our Team</h2><br>
+          <ul class="list1">
+            <li>Jiajun Zhu: A junior from ZJU, CKC, Mixed Class 2205, majoring in computer science and technology.</li><br>
+            <li>Yiduo Xiong: A junior from ZJU, CKC, Mixed Class 2205, majoring in computer science and technology.</li><br>
+            <li>Yuelin Yang: A junior from ZJU, CKC, Mixed Class 2201, majoring in computer science and technology.</li><br>
+          </ul>
+          <img class="zjj" src="./img/zjj.jpg" alt="zjj">
+          <img class="xyd" src="./img/xyd.jpg" alt="xyd">
+          <img class="yyl" src="./img/yyl.jpg" alt="yyl">
+        </div>
+        <div class="inspiration">
+          <h3>Source of Inspiration</h3>
+          <p class="inspirationText">
+            The globally acclaimed House of Cards premiered on streaming service Netflix on February 1, 2013. The producer analyzed through big data found it would be popular, so this web drama was produced. 
+          </p>
+          <img  class="inspirationPoster" src="./img/House of Cards.jpg" alt="House of Cards">
+        </div>
+        <div class="briefIntroduction">
+          <h3>Brief Introduction</h3><br>
+          <p>
+              This project is designed based on echarts.We made a personal design after learning from the official website documents:
+          </p><br>
+          <ol class="list2">
+            <li>
+              Design: After completing the data collation, we made a scientific design from three aspects: genre, director, and actors. 
+            </li><br>
+            <li>
+              Code: Painting.js is the core file of our project system, used to draw images and complete interactions.The most complicated thing in the code is the relationship diagram, because we need to design the loop to get all the data involved and consider the special case of self-directed and self-acted.
+            </li><br>
+            <li>
+              Interaction: The content of the official website is not comprehensive. We designed four layers of click interactions after self-study.
+            </li>
+          </ol>
+        </div>
+        <div class="references">
+          <h3>References</h3>
+          <ol class="list3">
+            <li>Film Data: IMDB top 1000 list</li>
+            <li>Supplementary Data: https://www.themoviedb.org/</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <ul>
+        <li class="control1" onclick="set1()">FilmSelecter</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li class="control2" onclick="set2()">Preparation</li>
+        <li class="control3" onclick="set3()">Main</li>
+        <li class="control4" onclick="set4()">About</li>
+      </ul>
+    </div>
+    <script src="./js/control.js"></script>
+  </body>
+</html>
